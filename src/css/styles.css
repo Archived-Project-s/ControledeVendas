@@ -1,0 +1,13 @@
+@import './base/index.css';
+@import './components/index.css';
+@import './variables/index.css';
+
+.teste{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--backgroundcolor);
+    transition: background-color .4s;
+}

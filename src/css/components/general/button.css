@@ -1,0 +1,16 @@
+button.btn{
+    /*estilização*/
+    border: none;
+    outline: 0;
+    background-color: var(--purple);
+    min-height: 20px;
+    min-width: 20px;
+    border-radius: 3px;
+
+    /*tipografia*/
+    color: white;
+}
+
+button.btn:hover{
+    cursor: pointer;
+}

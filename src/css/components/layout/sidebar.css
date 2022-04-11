@@ -1,0 +1,81 @@
+aside.sidebar{
+    /*posicionamento*/
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1;
+
+    /*estilização*/
+    width: 200px;
+    height: 100vh;
+    box-shadow: 0 0 5px black;
+
+    /*flexbox*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+aside.sidebar > .img-container{
+    padding: 10px 15px;
+    border-bottom: 1px solid black;
+}
+
+aside.sidebar > .img-container > img{
+    width: 100%;
+}
+
+aside.sidebar > button.btn{
+    /*tipografia*/
+    font-size: 1.5rem;
+    color: var(--textcolor);
+
+    /*estilos*/
+    height: 50px;
+}
+
+#sidebarBtn{
+    display: none;
+}
+
+.dismiss-sidebar, label[for="sidebarBtn"]{
+    z-index: 1;
+}
+
+@media only screen and (max-width: 700px){
+
+    label[for="sidebarBtn"]{
+        width: 36px;
+        height: 36px;
+        top: 20px;
+        left: 20px;
+        cursor: pointer;
+    }
+
+    #sidebarBtn:not(:checked) + aside.sidebar{
+        transform: translateX(-100%);
+        transition: transform .4s;
+    }
+
+    #sidebarBtn:not(:checked) ~ .dismiss-sidebar{
+        display: none;
+    }
+
+    #sidebarBtn:checked ~ .dismiss-sidebar{
+        left: 220px;
+        top: 20px;
+        position: fixed;
+        width: 36px;
+        height: 36px;
+        border: none;
+        outline: 0;
+        background: transparent;
+        }
+}
+
+@media only screen and (min-width: 701px){
+    label[for="sidebarBtn"], .dismiss-sidebar{
+        display: none;
+    }
+}

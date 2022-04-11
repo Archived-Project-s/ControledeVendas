@@ -1,0 +1,6 @@
+:root{
+    --backgroundcolor: var(--light-backgroundcolor);
+    --sidebarbackgroundcolor: var(--light-sidebarbackgroundcolor);
+    --textcolor: var(---light-textcolor);
+    --datatablebackground: var(--light-datatablebackground)
+}

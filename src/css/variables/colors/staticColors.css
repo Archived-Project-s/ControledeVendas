@@ -1,0 +1,9 @@
+:root{
+    --purple: #AD00FF;
+    --purpledegrade: linear-gradient(60deg, #7b1fa2, #913f9e);
+    --greendegrade: linear-gradient(60deg, #288c6c, #4ea752);
+    --reddegrade: linear-gradient(60deg, #d22824, #da3a36);
+    --orangedegrade: linear-gradient(60deg, #f5700c, #ff9800);
+    --sidebuttonhover: rgba(200, 200, 200, 0.2);
+
+}

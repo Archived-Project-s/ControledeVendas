@@ -1,0 +1,26 @@
+.card{
+
+    /*estilização*/
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 3px;
+
+    /*flexbox*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card > .icon-container{
+    width: 80%;
+    height: 50%;
+    background-color: var(--purple);
+    border-radius: 5px;
+}
+
+.card > .icon-container > * {
+    transform: scale(1.5);
+    fill: white;
+}

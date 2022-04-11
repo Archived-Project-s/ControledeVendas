@@ -1,0 +1,28 @@
+.page{
+    /*estilização*/
+    min-height: 100vh;
+    width: calc(100vw - 200px);
+    padding: 0 20px;
+
+    /*posicionamento*/
+    top: 0;
+    right: 0;
+    position: absolute;
+
+    /*flexbox*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page *{
+    color: var(--textcolor) !important;
+    transition: color .4s;
+}
+
+@media only screen and (max-width: 700px){
+    .page{
+        width: 100vw;
+    }
+}
